@@ -1,4 +1,4 @@
 {
     "image": "mcr.microsoft.com/devcontainers/typescript-node:20-bookworm",
-    "postCreateCommand": "npm install"
+    "postCreateCommand": "npm install && npx playwright install-deps && npx playwright install"
 }
