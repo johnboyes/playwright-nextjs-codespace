@@ -14,11 +14,3 @@ one-time thing.
 
 - The tests only run in headless mode at the moment.  Should be able to have headed mode
   (and UI mode, debug mode, trace mode etc) working very soon, too.
-
-- The available browsers that the tests run on are:
-
-  - Desktop Chrome
-  - Mobile Chrome
-  - Mobile Safari
-
-    (not sure why the other browsers such as Firefox and WebKit are not available, haven't looked into this yet)
