@@ -3,7 +3,10 @@
     "postCreateCommand": "npm install && npx playwright install-deps && npx playwright install",
     "customizations": {
         "vscode": {
-            "extensions": ["ms-playwright.playwright"]
+            "extensions": [
+                "ms-playwright.playwright",
+                "GitHub.vscode-github-actions"
+            ]
         }
     }
 }
