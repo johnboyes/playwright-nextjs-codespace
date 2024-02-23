@@ -15,7 +15,8 @@
                 "editor.formatOnSave": true,
                 "editor.codeActionsOnSave":{
                     // Import sorting on save is experimental, see: https://biomejs.dev/reference/vscode/#imports-sorting-experimental
-                    "source.organizeImports.biome": "explicit"
+                    // Decided to turn it off for now as it seemed to be introducing some syntax errors.
+                    "source.organizeImports.biome": "never"
                   }
 			}
         }
