@@ -50,11 +50,6 @@ As per [the documentation](https://playwright.dev/docs/test-ui-mode#docker--gith
 forwarded automatically, so it is then just a case of clicking on the link that is prompted in the terminal 
 window - easy!
 
-#### Limitations
-
-- The tests only run in headless mode at the moment.  Should be able to have headed mode
-  (and UI mode, debug mode, trace mode etc) working very soon, too.
-
 ## Linting and formatting
 
 We use [Biome](https://biomejs.dev/) as a unified tool for both linting and formatting. It's a 
