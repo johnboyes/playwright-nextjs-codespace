@@ -39,6 +39,17 @@ and [the extension's documentation](https://marketplace.visualstudio.com/items?i
 
 - `npx playwright test`
 
+### Running the Playwright tests in UI mode (from the GitHub Codespace)
+
+Playwright's [UI mode is very powerful indeed](https://playwright.dev/docs/test-ui-mode), so it is important
+that we can use this mode when working in a GitHub Codespace.  Fortunately, it is very easy to do so:
+
+- `npx playwright test --ui-host=0.0.0.0`
+
+As per [the documentation](https://playwright.dev/docs/test-ui-mode#docker--github-codespaces) the port gets
+forwarded automatically, so it is then just a case of clicking on the link that is prompted in the terminal 
+window - easy!
+
 #### Limitations
 
 - The tests only run in headless mode at the moment.  Should be able to have headed mode
