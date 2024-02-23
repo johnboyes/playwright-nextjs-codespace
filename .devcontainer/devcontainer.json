@@ -5,8 +5,19 @@
         "vscode": {
             "extensions": [
                 "ms-playwright.playwright",
-                "GitHub.vscode-github-actions"
-            ]
+                "GitHub.vscode-github-actions",
+                "biomejs.biome"
+            ],
+            "settings": {
+                // https://biomejs.dev/reference/vscode/#default-formatter
+				"editor.defaultFormatter": "biomejs.biome",
+                // https://biomejs.dev/reference/vscode/#format-on-save
+                "editor.formatOnSave": true,
+                "editor.codeActionsOnSave":{
+                    // Import sorting on save is experimental, see: https://biomejs.dev/reference/vscode/#imports-sorting-experimental
+                    "source.organizeImports.biome": "explicit"
+                  }
+			}
         }
     }
 }
