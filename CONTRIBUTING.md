@@ -1,25 +1,42 @@
 # Contributing
 
-## Setting up Playwright
+## Playwright tests
+
+### Setting up Playwright
 
 Playwright (and the browsers it needs) are installed automatically when the Codespace
 first starts.  It takes a couple of minutes for the installation to complete, but it's a
 one-time thing. (In the future we can avoid waiting by moving the installation process on to a
 Docker container).
 
-## Running the Playwright tests
+### Running the Playwright tests
 
-### Running the Playwright tests in VS Code
+#### Running the Playwright tests in VS Code
 
 The Codespace comes with Playwright's VS Code extension already installed and configured.
 To run the tests via the extension see the [Getting Started guide](https://playwright.dev/docs/getting-started-vscode)
 and [the extension's documentation](https://marketplace.visualstudio.com/items?itemName=ms-playwright.playwright).
 
-### Running the Playwright tests from the command line
+#### Running the Playwright tests from the command line
 
 - `npx playwright test`
 
-## Limitations
+#### Limitations
 
 - The tests only run in headless mode at the moment.  Should be able to have headed mode
   (and UI mode, debug mode, trace mode etc) working very soon, too.
+
+## Linting and formatting
+
+We use [Biome](https://biomejs.dev/) as a unified tool for both linting and formatting. It's a 
+next-generation [opinionated](https://biomejs.dev/formatter/option-philosophy/) formatter and linter.
+It is extremely fast and by using one tool for both formatting and linting we avoid the
+[conflicts](https://dev.to/studio_m_song/how-to-make-eslint-work-with-prettier-avoiding-conflicts-and-problems-57pi)
+that can often arise when using Prettier and ESLint.
+
+The Codespace comes with [Biome's VS Code extension](https://biomejs.dev/reference/vscode/)
+already installed and configured.  It is setup to
+[format on save](https://biomejs.dev/reference/vscode/#format-on-save).
+
+We also have a Biome CI check (a 
+[Biome GitHub Action](https://biomejs.dev/recipes/continuous-integration/#github-actions)) that runs on all pushes and pull requests, to ensure that we are always fully compliant with Biome.
