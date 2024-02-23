@@ -1,6 +1,13 @@
 {
     "image": "mcr.microsoft.com/devcontainers/typescript-node:20-bookworm",
     "postCreateCommand": "npm install && npx playwright install-deps && npx playwright install",
+    "features": {
+        "ghcr.io/devcontainers-contrib/features/apt-get-packages:1": {
+            "packages": [
+                "xauth"
+            ]
+        }
+    },
     "customizations": {
         "vscode": {
             "extensions": [
@@ -10,15 +17,15 @@
             ],
             "settings": {
                 // https://biomejs.dev/reference/vscode/#default-formatter
-				"editor.defaultFormatter": "biomejs.biome",
+                "editor.defaultFormatter": "biomejs.biome",
                 // https://biomejs.dev/reference/vscode/#format-on-save
                 "editor.formatOnSave": true,
-                "editor.codeActionsOnSave":{
+                "editor.codeActionsOnSave": {
                     // Import sorting on save is experimental, see: https://biomejs.dev/reference/vscode/#imports-sorting-experimental
                     // Decided to turn it off for now as it seemed to be introducing some syntax errors.
                     "source.organizeImports.biome": "never"
-                  }
-			}
+                }
+            }
         }
     }
 }
