@@ -1,5 +1,23 @@
 # Contributing
 
+## Setting up your development environment
+
+The recommended way to setup your development environment for this repo is to open it in a
+[GitHub Codespace](https://github.com/features/codespaces). 
+
+### Codespace requirements
+
+Literally all you need is either:
+- a web browser, or
+- VS Code (recommended)
+
+[Web browser Codespaces documentation](https://docs.github.com/en/codespaces/developing-in-a-codespace/developing-in-a-codespace?tool=webui#working-in-a-codespace-in-the-browser)
+
+[VS Code Codespaces documentation](https://docs.github.com/en/codespaces/developing-in-a-codespace/developing-in-a-codespace?tool=vscode#working-in-a-codespace-in-vs-code)
+
+All you need to do is click on the green `<> Code` dropdown button on the GitHub repo page,
+and then choose: `Create codespace on main`.
+
 ## Playwright tests
 
 ### Setting up Playwright
