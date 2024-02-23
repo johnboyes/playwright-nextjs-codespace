@@ -1,21 +1,22 @@
 {
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "test:e2e": "playwright test"
-  },
-  "dependencies": {
-    "next": "latest",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "1.5.3",
-    "@playwright/test": "^1.41.2",
-    "@types/node": "20.10.4",
-    "@types/react": "18.2.45",
-    "typescript": "5.3.3"
-  }
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"test:e2e": "playwright test",
+		"test:watch:codespaces": "npm run test:e2e -- --ui-host=0.0.0.0"
+	},
+	"dependencies": {
+		"next": "latest",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.5.3",
+		"@playwright/test": "^1.41.2",
+		"@types/node": "20.10.4",
+		"@types/react": "18.2.45",
+		"typescript": "5.3.3"
+	}
 }
