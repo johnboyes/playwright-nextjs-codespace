@@ -4,7 +4,8 @@
 
 Playwright (and the browsers it needs) are installed automatically when the Codespace
 first starts.  It takes a couple of minutes for the installation to complete, but it's a
-one-time thing.
+one-time thing. (In the future we can avoid waiting by moving the installation process on to a
+Docker container).
 
 ## Running the Playwright tests
 
